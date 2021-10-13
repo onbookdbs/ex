@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 
 const router = express.Router();
 router.get('/', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
     let hostName = req.headers['x-forwarded-proto'] + "://" + req.headers.host;
     res.header('Content-Type', 'application/xml');
     let url = "https://db.blitarkab.go.id/id/";
