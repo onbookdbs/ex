@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+const fetch = require('node-fetch');
 const path = require('path');
 const serverless = require('serverless-http');
 const app = express();
